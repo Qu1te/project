@@ -13,7 +13,7 @@ vwindow.onload = function () {
             if(currency1.value != 'RUB'){ 
                 z = val.value*c[currency1.value]; 
                 result.innerHTML = Math.ceil((z/c[currency2.value])*100)/100; 
-            } else { // Если не равны
+            } else { 
                 result.innerHTML = Math.ceil((val.value*c[currency2.value])*100)/100; 
             }
         }
