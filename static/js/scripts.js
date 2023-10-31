@@ -13,7 +13,7 @@ convertButton.addEventListener("click", () => {
    
 });
 
-async function getExchangeRate(from, to, amountValue) ""{
+async function getExchangeRate(from, to, amountValue) {
     if(from === "KZT" ){
         const convertedAmount = amountValue * 5.2;//вставь список фиксированого курса тенге, в ключе не было его 
         result.textContent = `Result: ${convertedAmount.toFixed(2)} ${to}`;
@@ -32,3 +32,4 @@ async function getExchangeRate(from, to, amountValue) ""{
             result.textContent = `Result: ${convertedAmount.toFixed(2)} ${to}`;
         });
     }
+}
